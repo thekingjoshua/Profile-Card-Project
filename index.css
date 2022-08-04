@@ -1,0 +1,110 @@
+* {
+  box-sizing: border-box;
+}
+:root {
+  --primary1: hsl(185, 75%, 39%);
+  --primary2: hsl(229, 23%, 23%);
+  --primary3: hsl(227, 10%, 46%);
+  --neutral1: hsl(0, 0%, 59%);
+  --width: 310px;
+  --padding: 10px 20px 0 20px;
+}
+body {
+  background-image: url(images/bg-pattern-top.svg);
+  background-repeat: no-repeat;
+  background-color: var(--primary1);
+}
+div.main-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+div.card {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-top: 150px;
+}
+div.top > img {
+  width: var(--width);
+  height: 120px;
+  object-fit: cover;
+  display: block;
+  border-radius: 10px 10px 0 0;
+}
+div.bottom {
+  background-color: antiquewhite;
+  width: var(--width);
+  height: 220px;
+  border-radius: 0 0 10px 10px;
+}
+div.photo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+div.photo > img {
+  border-radius: 50%;
+  border: 5px solid antiquewhite;
+  position: absolute;
+}
+div.name-age {
+  padding-top: 50px;
+  display: flex;
+  justify-content: center;
+  font-family: Arial;
+  font-weight: bolder;
+  color: var(--primary2);
+}
+div.name-age > .age {
+  color: var(--primary3);
+  margin-left: 20px;
+}
+div.country {
+  padding: 10px 0 10px 0;
+  display: flex;
+  justify-content: center;
+  font-family: Arial;
+  font-weight: bolder;
+  color: var(--neutral1);
+}
+hr {
+  height: 0;
+  opacity: 1;
+  border-top: 1px solid rgba(0, 0, 0, 0.175);
+  outline: none;
+}
+div.stats {
+  display: flex;
+  padding: 15px 30px 30px 30px;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial black;
+}
+div.stats > .first {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: var(--padding);
+}
+div.stats > .second {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: var(--padding);
+}
+div.stats > .third {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: var(--padding);
+}
+div.small {
+  font-size: 10px;
+  color: var(--primary3);
+}
+
